@@ -41,5 +41,5 @@ Syllabus Exporter は、シラバスを JSON ファイルで出力します。
 
 ## License
 
-- `/data`, `` 以外のすべてのプログラムは MIT LICENSE でライセンスされます。
-- `/data`
+- `/data`, `/ichipiro-syllabus.json` 以外のすべてのプログラムは MIT LICENSE でライセンスされます
+- `/data`, `/ichipiro-syllabus.json` はライセンス**されません**。すべてのデータに対する権利は[公立大学法人 広島市立大学](https://www.hiroshima-cu.ac.jp/)に帰属します
