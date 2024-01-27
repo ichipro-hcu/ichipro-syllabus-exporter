@@ -22,7 +22,7 @@ jobs:
         uses: sksat/setup-rye@v0.12.0
       - name: Sync Rye
         run: |
-          cd ./tool
+          cd ./tools
           rye sync
       - name: Run Script
         run: |
