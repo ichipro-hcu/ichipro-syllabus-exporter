@@ -12,8 +12,7 @@ jobs:
     permissions: write-all
     strategy:
       fail-fast: false
-      matrix:
-        python-version: [3.8]
+      
     env:
       TZ: Asia/Tokyo
     steps: 
