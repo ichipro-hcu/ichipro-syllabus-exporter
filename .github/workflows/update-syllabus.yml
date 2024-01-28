@@ -30,3 +30,14 @@ jobs:
       - name: Get Current Date
         id: date
         run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+      - name: Create Pull Request
+        id: cpr
+        uses: peter-evans/create-pull-request@v5
+        with:
+          title: Scheduled Update of Syllabus CSV Data - ${{ steps.date.outputs.date }}
+          branch: CSV/${{ steps.date.outputs.date }}
+          author: GitHub Action <action@github.com>
+          committer: GitHub Action <action@github.com>
+          commit-message: |
+            update csv: ${{ steps.date.outputs.date }}
+          
