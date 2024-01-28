@@ -26,7 +26,8 @@ jobs:
           rye sync
       - name: Run Script
         run: |
-          python ./tools/src/main.py
+          cd ./tools/src
+          python main.py
       - name: Get Current Date
         id: date
         run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
