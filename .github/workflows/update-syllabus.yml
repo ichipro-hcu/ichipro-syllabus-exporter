@@ -33,6 +33,7 @@ jobs:
         run: | 
           cd ./tools/src/csv
           diff -q $(ls -rt | tail -n 2)
+        continue-on-error: true
       - name: Echo Diff Old Data Context
         run: echo $CONTEXT
         env:
