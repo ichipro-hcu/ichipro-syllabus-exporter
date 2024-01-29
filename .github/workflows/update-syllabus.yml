@@ -28,12 +28,22 @@ jobs:
         run: |
           cd ./tools/src
           python main.py
+      - name: Diff Old data
+        id: csvdiff
+        run: | 
+          cd ./tools/src/csv
+          diff -q $(ls -rt | tail -n 2)
+      - name: Echo Diff Old Data Context
+        run: echo $CONTEXT
+        env:
+          CONTEXT: ${{ toJSON(steps.csvdiff) }}
       - name: Get Current Date
         id: date
         run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
       - name: Create Pull Request
         id: cpr
         uses: peter-evans/create-pull-request@v5
+        if: steps.csvdiff.outcome != 'success'
         with:
           title: Scheduled Update of Syllabus CSV Data - ${{ steps.date.outputs.date }}
           branch: CSV/${{ steps.date.outputs.date }}
