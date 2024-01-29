@@ -32,19 +32,19 @@ jobs:
         id: csvdiff
         run: | 
           cd ./tools/src/csv
-          diff -q $(ls -rt | tail -n 2)
+          echo "::set-output name=csvDiffRes::$(diff -q $(ls -rt | tail -n 2))"
         continue-on-error: true
-      - name: Echo Diff Old Data Context
+      - name: Echo Diff Result
         run: echo $CONTEXT
         env:
-          CONTEXT: ${{ toJSON(steps.csvdiff) }}
+          CONTEXT: ${{ steps.csvdiff.outputs.csvDiffRes }}
       - name: Get Current Date
         id: date
         run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
       - name: Create Pull Request
         id: cpr
         uses: peter-evans/create-pull-request@v5
-        if: steps.csvdiff.outcome != 'success'
+        if: steps.csvdiff.outputs.csvDiffRes != ''
         with:
           title: Scheduled Update of Syllabus CSV Data - ${{ steps.date.outputs.date }}
           branch: CSV/${{ steps.date.outputs.date }}
