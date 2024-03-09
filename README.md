@@ -31,7 +31,11 @@ Syllabus Exporter は、シラバスを JSON ファイルで出力します。
       "teacher": "桑田精一", // 代表教員を指す（運用はシラバス検索ページにリストされる担当教員カラムの氏名）
       "role": "准教授",
       "unit": 3,
-      "target": ["B3"],
+      "target": {
+        "B1": true,
+        "B2": true
+        // ...
+      },
       "require": "必修", // 受講要件
       "semester": "前期",
       "pw": "有",
