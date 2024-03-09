@@ -14,7 +14,8 @@ def __init__():
 def summarizeSyllabus():
     response = requestSyllabusList()
     tableArray = convertSyllabusList(response)
-    createCSVFile(tableArray)
+    res_path = createCSVFile(tableArray)
+    return res_path
 
 def requestSyllabusList():
     url = "/scripts/Syllabussearch/sel.php"
@@ -72,6 +73,8 @@ def createCSVFile(tableArray, outputPath = "./csv/" + now + ".csv"):
             writer.writerows(tableArray)
     except Exception as e:
         raise ValueError(f"File Creation Error - {e}")
+    return outputPath
     
 if __name__ == "__main__":
     res = summarizeSyllabus()
+    print(f"Output: {res}")
