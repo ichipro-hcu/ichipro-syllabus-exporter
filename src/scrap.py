@@ -8,14 +8,17 @@ import datetime
 baseDomain = "http://rsw.office.hiroshima-cu.ac.jp"
 now = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
 
+
 def __init__():
     pass
+
 
 def summarizeSyllabus():
     response = requestSyllabusList()
     tableArray = convertSyllabusList(response)
     res_path = createCSVFile(tableArray)
     return res_path
+
 
 def requestSyllabusList():
     url = "/scripts/Syllabussearch/sel.php"
@@ -26,34 +29,38 @@ def requestSyllabusList():
         "grd_cd": "@",
         "jitsumu_cd": "@",
         "sbj_name": "",
-        "tch_name": ""
-        }
-    headers = {'Content-Type': 'application/x-www-form-urlencoded'}
+        "tch_name": "",
+    }
+    headers = {"Content-Type": "application/x-www-form-urlencoded"}
 
-    response = requests.post(url = baseDomain + url, data = urllib.parse.urlencode(data), headers=headers)
+    response = requests.post(
+        url=baseDomain + url, data=urllib.parse.urlencode(data), headers=headers
+    )
     if response.status_code != 200:
-        raise ValueError('System Failure on rsw.office.hiroshima-cu.ac.jp')
+        raise ValueError("System Failure on rsw.office.hiroshima-cu.ac.jp")
     if response.text == "":
-        raise ValueError('Response from rsw.office.hiroshima-cu.ac.jp is empty')
+        raise ValueError("Response from rsw.office.hiroshima-cu.ac.jp is empty")
     return response
-    
+
+
 def convertSyllabusList(response):
-    soup = BeautifulSoup(response.text, 'html.parser')
+    soup = BeautifulSoup(response.text, "html.parser")
     rows = soup.findAll("tr")[1:]
     tableArray = []
     for row in rows:
-        soup2 = BeautifulSoup(str(row), 'html.parser')
+        soup2 = BeautifulSoup(str(row), "html.parser")
         scrapRow = soup2.findAll("td")
         rowArray = []
         for column in scrapRow:
-            rowArray.append(column.getText().replace('　', ' '))
+            rowArray.append(column.getText().replace("　", " "))
         scrapAnchor = soup2.find("a")
         href = scrapAnchor.get("href")
         rowArray.append(href)
         tableArray.append(rowArray[1:])
     return tableArray
 
-def createCSVFile(tableArray, outputPath = "../public/csv/" + now + ".csv"):
+
+def createCSVFile(tableArray, outputPath="../public/csv/" + now + ".csv"):
     subjectrow = [
         "授業科目名",
         "担当教員",
@@ -64,7 +71,7 @@ def createCSVFile(tableArray, outputPath = "../public/csv/" + now + ".csv"):
         "開講学期",
         "実務経験",
         "備考",
-        "シラバスURL"
+        "シラバスURL",
     ]
     try:
         with open(outputPath, "w") as f:
@@ -74,7 +81,8 @@ def createCSVFile(tableArray, outputPath = "../public/csv/" + now + ".csv"):
     except Exception as e:
         raise ValueError(f"File Creation Error - {e}")
     return outputPath
-    
+
+
 if __name__ == "__main__":
     res = summarizeSyllabus()
     print(f"Output: {res}")
