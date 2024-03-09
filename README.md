@@ -35,7 +35,8 @@ Syllabus Exporter は、シラバスを JSON ファイルで出力します。
       "require": "必修", // 受講要件
       "semester": "前期",
       "pw": "有",
-      "description": ""
+      "description": "",
+      "detail": "http://rsw...."
     }
   ]
 }
