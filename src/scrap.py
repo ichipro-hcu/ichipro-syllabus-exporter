@@ -53,7 +53,7 @@ def convertSyllabusList(response):
         tableArray.append(rowArray[1:])
     return tableArray
 
-def createCSVFile(tableArray, outputPath = "./csv/" + now + ".csv"):
+def createCSVFile(tableArray, outputPath = "../public/csv/" + now + ".csv"):
     subjectrow = [
         "授業科目名",
         "担当教員",
