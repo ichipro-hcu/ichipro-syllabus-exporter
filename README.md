@@ -33,11 +33,19 @@ Syllabus Exporter は、シラバスを JSON ファイルで出力します。
       "unit": 3,
       "target": {
         "B1": true,
-        "B2": true
+        "B2": true,
         // ...
+        "parseError": false
       },
       "require": "必修", // 受講要件
-      "semester": "前期",
+      "semester": {
+        "前期前半": false,
+        "前期後半": false,
+        "後期前半": true,
+        "後期後半": false,
+        "特別編成": false,
+        "parseError": false
+      },
       "pw": "有",
       "description": "",
       "detail": "http://rsw...."
@@ -52,3 +60,11 @@ Syllabus Exporter は、シラバスを JSON ファイルで出力します。
 
 - すべてのプログラムは MIT LICENSE でライセンスされます
 - シラバスデータはライセンス**されません**。すべてのデータに対する権利は[公立大学法人 広島市立大学](https://www.hiroshima-cu.ac.jp/)に帰属します
+
+## 名寄せ
+
+0. 英語の行は別処理
+1. 全角->半角
+2. "(前期|後期)博士" などの文字列を含むものは 数字を切り取って M1, D1 などに誘導
+3. 数字のみのものは パースして B1, B2 になおす
+4. "以上", "以下" に出あったら同一学位の学年をまとめて選択
