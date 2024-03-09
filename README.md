@@ -5,42 +5,45 @@ Syllabus Exporter は、シラバスを JSON ファイルで出力します。
 ## データ出力
 
 - 取得元
-    - [広島市立大学　シラバス公開情報　検索](http://rsw.office.hiroshima-cu.ac.jp/scripts/Syllabussearch/index.php)
+  - [広島市立大学　シラバス公開情報　検索](http://rsw.office.hiroshima-cu.ac.jp/scripts/Syllabussearch/index.php)
 - 取得方法
-    - 空の POST リクエストを送信し、すべての科目をスクレイピングする
+  - 空の POST リクエストを送信し、すべての科目をスクレイピングする
 - 取得データ
-    - [ ] `/data` 内に `ichipiro-YYYYMMDD.csv` として記録
-    - [ ] CSV ファイルを正規化（例: 履修対象学年の英語を日本語に、など）
-    - [ ] ルートフォルダに `ichipiro-syllabus.json` を保存 
+  - [x] `/public/csv/` 内に `yyyymmddhhmmss.csv` として記録
+  - [ ] CSV ファイルを正規化（例: 履修対象学年の英語を日本語に、など）
+  - [ ] `/public/ichipiro-syllabus.json` を保存
+- 自動化
+  - [ ] GitHub Actions が `public` フォルダを自動公開
+  - [ ] `ichipro.sasakulab.com/syllabus/` に Cloudflared Pages を通す
 
 ## `ichipiro-syllabus.json`
 
-例示: [システム工学実験Ⅰ(システム工学専攻: 桑田精一先生)](http://rsw.office.hiroshima-cu.ac.jp/OpenSyllabus/2023_28431801.html)
+例示: [システム工学実験 Ⅰ(システム工学専攻: 桑田精一先生)](http://rsw.office.hiroshima-cu.ac.jp/OpenSyllabus/2023_28431801.html)
 
 ```json
 {
-    "updated": "2024/01/01",
-    "subject": [
-        {
-            "id": 28341801,
-            "year": 2023,
-            "subject": "システム工学実験Ⅰ",
-            "description": "3年次履修対象であるシステム工学実験Ⅰ・Ⅱを通して，メカナムホイール駆動ロボットの制御に関するソフトウェアからハードウェアに至る内容を実施する．本実験ではこのうち，モーター制御プログラムの作成と速度制御実験において，ロボット駆動プログラムを作成し，センサー出力を利用して速度制御を行う．プロセス間通信実験においては，ソケット通信などのネットワーク技術を学び，制御ライブラリROSを用いてロボットの遠隔制御をできるようになる．ジェスチャ指示によるロボット操作実験においては，時系列データ認識処理を学び，人物のジェスチャ認識によりロボットを遠隔操作するためのインタフェースを構築する．ロボットナビゲーション実験においては，ロボット上のセンサを用いて障害物を検出し，回避して移動する制御則を機械学習に基づいて構築できるようになる．これらを通して情報処理システム開発におけるノウハウやチームで課題に取り組む際のコミュニケーション能力や協調性を身に付ける．", // \n を削除
-            "unit": 3.0,
-            "mainTeacher": "桑田精一", // 代表教員を指す（運用はシラバス検索ページにリストされる担当教員カラムの氏名）
-            "allTeachers": "システム工学専攻 准教授 桑田精一（代表教員）, 准教授 池田徹志，准教授 脇田航，准教授 島和之，准教授 双紙正和，准教授 中山仁史，准教授 福島勝，准教授 村田佳洋，准教授 神尾武司，助教 厚海慶太，助教 川本佳代，助教 小作敏晴，助教 齊藤充行，助教 佐藤康臣，助教 高井博之，助教 高橋雄三，助教 辻勝弘", // 全リスト（運用はシラバス詳細ページの一覧）。シラバス入力者によって入力方式がまちまちすぎるため、正規化は行わない。
-            "target": "３年",
-            "type": "実験",
-            "require": "特になし", // 受講要件
-            "cancel": true, // どの履修ページでも、ここは譲らず可否で書いてあるため、正規化
-            "exam": "実施しない", // 期末試験実施の有無
-            "keyword": "自立移動ロボット，ディジタル，アナログ，プロセス間通信，グラフィカルユーザインタフェース" // 検索用
-        }
-]
+  "updated": "2024/01/01",
+  "subject": [
+    {
+      "id": 28341801,
+      "year": 2023,
+      "subject": "システム工学実験Ⅰ",
+      "teacher": "桑田精一", // 代表教員を指す（運用はシラバス検索ページにリストされる担当教員カラムの氏名）
+      "role": "准教授",
+      "unit": 3,
+      "target": ["B3"],
+      "require": "必修", // 受講要件
+      "semester": "前期",
+      "pw": "有",
+      "description": ""
+    }
+  ]
 }
 ```
 
+なお、[API 側の型定義](https://github.com/ichipro-hcu/ichipro-syllabus-api/blob/main/src/interface/interfaces.ts)が存在し、基本的にそれに準拠する
+
 ## License
 
-- `/data`, `/ichipiro-syllabus.json` 以外のすべてのプログラムは MIT LICENSE でライセンスされます
-- `/data`, `/ichipiro-syllabus.json` はライセンス**されません**。すべてのデータに対する権利は[公立大学法人 広島市立大学](https://www.hiroshima-cu.ac.jp/)に帰属します
+- すべてのプログラムは MIT LICENSE でライセンスされます
+- シラバスデータはライセンス**されません**。すべてのデータに対する権利は[公立大学法人 広島市立大学](https://www.hiroshima-cu.ac.jp/)に帰属します
