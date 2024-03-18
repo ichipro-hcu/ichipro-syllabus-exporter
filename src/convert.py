@@ -1,12 +1,8 @@
 import scrap
 import csv
+from lib import target as t
 
 scrapResult = scrap.summarizeSyllabus()
-
-
-def unifyTargetArray(rawStr):
-    res = []
-    return res
 
 
 def generateJSON(strpath):
@@ -14,7 +10,7 @@ def generateJSON(strpath):
     with open(strpath, encoding="utf8", newline="") as raw:
         rows = csv.reader(raw)
         for row in rows[1:]:
-            res = unifyTargetArray()
+            target, detail = t.unifyTargetArray()
             dict = {
                 "id": row[9][-13:-6],
                 "year": row[9][-18:-15],
@@ -22,11 +18,11 @@ def generateJSON(strpath):
                 "teacher": row[1],
                 "role": row[2],
                 "unit": row[3],
-                "target": ["B1", "B2"],
+                "target": target,
                 "require": row[4],
                 "semester": row[6],
                 "pw": row[7],
-                "detail": row[9],
+                "detail": detail,
             }
             content.append(dict)
     return content
