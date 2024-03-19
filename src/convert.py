@@ -23,7 +23,7 @@ def generateJSON(path="../public/csv/sample.csv"):
                 "require": row[4],
                 "semester": row[6],
                 "pw": row[7],
-                "url": row[5],
+                "url": row[9],
                 "detail": detail,
             }
             content.append(dict)
