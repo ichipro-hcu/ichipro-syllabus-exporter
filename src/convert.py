@@ -29,8 +29,8 @@ def generateJSON(path="../public/csv/sample.csv"):
 
 
 if __name__ == "__main__":
-    # scrapResult = scrap.summarizeSyllabus()
-    with open("../public/ichipiro-syllabus.json", "w") as f:
+    scrapResult = scrap.summarizeSyllabus()
+    with open(scrapResult, "w") as f:
         json.dump(
             {"date": str(datetime.date.today()), "contents": generateJSON()},
             f,
