@@ -1,19 +1,19 @@
+import json
+import datetime
 import scrap
 import csv
 from lib import target as t
 
-scrapResult = scrap.summarizeSyllabus()
 
-
-def generateJSON(strpath):
+def generateJSON(path="../public/csv/sample.csv"):
     content = []
-    with open(strpath, encoding="utf8", newline="") as raw:
+    with open(path, encoding="utf8", newline="") as raw:
         rows = csv.reader(raw)
-        for row in rows[1:]:
-            target, detail = t.unifyTargetArray()
+        for row in rows:
+            target, detail = t.unifyTargetArray(rawStr=row[5])
             dict = {
-                "id": row[9][-13:-6],
-                "year": row[9][-18:-15],
+                "id": row[9][-13:-5],
+                "year": row[9][-18:-14],
                 "subject": row[0],
                 "teacher": row[1],
                 "role": row[2],
@@ -26,3 +26,14 @@ def generateJSON(strpath):
             }
             content.append(dict)
     return content
+
+
+if __name__ == "__main__":
+    # scrapResult = scrap.summarizeSyllabus()
+    with open("../public/ichipiro-syllabus.json", "w") as f:
+        json.dump(
+            {"date": str(datetime.date.today()), "contents": generateJSON()},
+            f,
+            indent=2,
+            ensure_ascii=False,
+        )
