@@ -27,8 +27,7 @@ def roleReturn(rawStr: str, res: dict, BaseRole: str, NoneAllTrue: bool = False)
     if "4" in rawStr:
         res[f"{BaseRole}4"] = True
     if "以上" in rawStr or "above" in rawStr:
-        pass
-    if "以下" in rawStr:
+
         pass
     if (
         res[f"{BaseRole}1"] == False
@@ -84,7 +83,7 @@ def unifyTargetArray(rawStr):
         res = roleReturn(rawStr, res, "D", True)
         success = True
     # d. 院
-    if "院" and not ("前期" in rawStr or "後期" in rawStr):
+    if ("院" in rawStr or "Graduate") and success == False:
         res = roleReturn(rawStr, res, "D", True)
         res = roleReturn(rawStr, res, "M", True)
         success = True
@@ -99,7 +98,10 @@ def unifyTargetArray(rawStr):
     # 4. 1~3 の処理が正常に終了した場合、括弧を抜き出して、備考欄に括弧内のコメントを代入
     if success == True:
         reg = "(?<=（).+?(?=\）)"
-        description = re.findall(reg, rawStr)[0]
+        if len(re.findall(reg, rawStr)) != 0:
+            description = re.findall(reg, rawStr)[0]
+        else:
+            pass
 
     # 5. 全てが成功しなければ、parseError フラグを立てて、備考欄に文字列をそのまま代入し、終了。
     if success == False:
@@ -107,3 +109,7 @@ def unifyTargetArray(rawStr):
         description = rawStr
 
     return res, description
+
+
+if __name__ == "__main__":
+    pass
