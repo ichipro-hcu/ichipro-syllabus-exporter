@@ -36,7 +36,7 @@ Syllabus Exporter は、シラバスを JSON ファイルで出力します。
       "semester": "前期",
       "pw": "有",
       "description": "",
-      "detail": "http://rsw...."
+      "url": "http://rsw...."
     }
   ]
 }
