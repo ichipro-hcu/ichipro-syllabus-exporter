@@ -16,29 +16,29 @@ translateDict = {
     ")": "）",
 }
 
+baseRoleMaximum = {"B": 4, "M": 2, "D": 3}
+
 
 def roleReturn(rawStr: str, res: dict, BaseRole: str, NoneAllTrue: bool = False):
+    min = 1
     if "1" in rawStr:
         res[f"{BaseRole}1"] = True
+        min = 1
     if "2" in rawStr:
         res[f"{BaseRole}2"] = True
+        min = 2
     if "3" in rawStr:
         res[f"{BaseRole}3"] = True
+        min = 3
     if "4" in rawStr:
         res[f"{BaseRole}4"] = True
+        min = 4
     if "以上" in rawStr or "above" in rawStr:
-
-        pass
-    if (
-        res[f"{BaseRole}1"] == False
-        and [f"{BaseRole}2"] == False
-        and [f"{BaseRole}3"] == False
-        and [f"{BaseRole}4"] == False
-    ) and NoneAllTrue:
-        res[f"{BaseRole}1"] = True
-        res[f"{BaseRole}2"] = True
-        res[f"{BaseRole}3"] = True
-        res[f"{BaseRole}4"] = True
+        for i in range(min, baseRoleMaximum[BaseRole] + 1, 1):
+            res[f"{BaseRole}{i}"] = True
+    if any(res) and NoneAllTrue == True:
+        for i in range(1, baseRoleMaximum[BaseRole] + 1, 1):
+            res[f"{BaseRole}{i}"] = True
     return res
 
 
@@ -75,15 +75,15 @@ def unifyTargetArray(rawStr):
         res = roleReturn(rawStr, res, "M", True)
         success = True
     # b. 前期
-    if "前期" in rawStr:
+    if "前期" in rawStr and success != True:
         res = roleReturn(rawStr, res, "M", True)
         success = True
     # c. 後期
-    if "後期" in rawStr:
+    if "後期" in rawStr and success != True:
         res = roleReturn(rawStr, res, "D", True)
         success = True
     # d. 院
-    if ("院" in rawStr or "Graduate") and success == False:
+    if ("院" in rawStr or "Graduate" in rawStr) and success != True:
         res = roleReturn(rawStr, res, "D", True)
         res = roleReturn(rawStr, res, "M", True)
         success = True
@@ -112,4 +112,16 @@ def unifyTargetArray(rawStr):
 
 
 if __name__ == "__main__":
-    pass
+    array = [
+        "Second year and above",
+        "3rd year students",
+        "Graduate Students",
+        "１・２年次",
+        "博士前期課程１、２年",
+        "2年次以上",
+        "１年（情報科学部・芸術学部対象）",
+        "💩",
+    ]
+    for i in array:
+        print("# " + i)
+        print(unifyTargetArray(i))
