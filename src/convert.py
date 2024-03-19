@@ -9,6 +9,7 @@ def generateJSON(path="../public/csv/sample.csv"):
     content = []
     with open(path, encoding="utf8", newline="") as raw:
         rows = csv.reader(raw)
+        next(rows)
         for row in rows:
             target, detail = t.unifyTargetArray(rawStr=row[5])
             dict = {
@@ -30,9 +31,10 @@ def generateJSON(path="../public/csv/sample.csv"):
 
 if __name__ == "__main__":
     scrapResult = scrap.summarizeSyllabus()
-    with open(scrapResult, "w") as f:
+    path = "../public/ichipiro-syllabus.json"
+    with open(path, "w") as f:
         json.dump(
-            {"date": str(datetime.date.today()), "contents": generateJSON()},
+            {"date": str(datetime.date.today()), "contents": generateJSON(scrapResult)},
             f,
             indent=2,
             ensure_ascii=False,
