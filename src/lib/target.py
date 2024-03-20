@@ -34,7 +34,8 @@ def roleReturn(rawStr: str, res: dict, BaseRole: str, NoneAllTrue: bool = False)
         res[f"{BaseRole}4"] = True
         min = 4
     if "以上" in rawStr or "above" in rawStr:
-        min = 1
+        if min == 0:
+            min = 1
         for i in range(min, baseRoleMaximum[BaseRole] + 1, 1):
             res[f"{BaseRole}{i}"] = True
     if any(res) and NoneAllTrue == True and min == 0:

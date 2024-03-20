@@ -9,8 +9,8 @@
       "role": "准教授",
       "unit": "2",
       "target": {
-        "B1": true,
-        "B2": true,
+        "B1": false,
+        "B2": false,
         "B3": true,
         "B4": true,
         "M1": false,
@@ -34,7 +34,7 @@
       "role": "教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -59,7 +59,7 @@
       "role": "教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -134,8 +134,8 @@
       "role": "非常勤講師",
       "unit": "1",
       "target": {
-        "B1": true,
-        "B2": true,
+        "B1": false,
+        "B2": false,
         "B3": true,
         "B4": true,
         "M1": false,
@@ -184,7 +184,7 @@
       "role": "講師",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -209,7 +209,7 @@
       "role": "教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -234,7 +234,7 @@
       "role": "教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -309,7 +309,7 @@
       "role": "准教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -334,8 +334,8 @@
       "role": "教授",
       "unit": "2",
       "target": {
-        "B1": true,
-        "B2": true,
+        "B1": false,
+        "B2": false,
         "B3": true,
         "B4": true,
         "M1": false,
@@ -359,7 +359,7 @@
       "role": "教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -384,8 +384,8 @@
       "role": "教授",
       "unit": "2",
       "target": {
-        "B1": true,
-        "B2": true,
+        "B1": false,
+        "B2": false,
         "B3": true,
         "B4": true,
         "M1": false,
@@ -409,8 +409,8 @@
       "role": "教授",
       "unit": "2",
       "target": {
-        "B1": true,
-        "B2": true,
+        "B1": false,
+        "B2": false,
         "B3": true,
         "B4": true,
         "M1": false,
@@ -434,7 +434,7 @@
       "role": "教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -459,7 +459,7 @@
       "role": "准教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -484,7 +484,7 @@
       "role": "准教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -534,7 +534,7 @@
       "role": "講師",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -559,7 +559,7 @@
       "role": "教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -584,7 +584,7 @@
       "role": "教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -609,7 +609,7 @@
       "role": "准教授",
       "unit": "1",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -634,7 +634,7 @@
       "role": "准教授",
       "unit": "1",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -659,7 +659,7 @@
       "role": "准教授",
       "unit": "1",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -684,8 +684,8 @@
       "role": "教授",
       "unit": "2",
       "target": {
-        "B1": true,
-        "B2": true,
+        "B1": false,
+        "B2": false,
         "B3": true,
         "B4": true,
         "M1": false,
@@ -709,8 +709,8 @@
       "role": "教授",
       "unit": "2",
       "target": {
-        "B1": true,
-        "B2": true,
+        "B1": false,
+        "B2": false,
         "B3": true,
         "B4": true,
         "M1": false,
@@ -884,7 +884,7 @@
       "role": "准教授",
       "unit": "1",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -909,7 +909,7 @@
       "role": "准教授",
       "unit": "1",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -1159,7 +1159,7 @@
       "role": "講師",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -1184,7 +1184,7 @@
       "role": "講師",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -1209,7 +1209,7 @@
       "role": "講師",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -1234,7 +1234,7 @@
       "role": "講師",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -1359,7 +1359,7 @@
       "role": "非常勤講師",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -1384,7 +1384,7 @@
       "role": "非常勤講師",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -1684,7 +1684,7 @@
       "role": "准教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -1909,7 +1909,7 @@
       "role": "准教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -2109,8 +2109,8 @@
       "role": "准教授",
       "unit": "2",
       "target": {
-        "B1": true,
-        "B2": true,
+        "B1": false,
+        "B2": false,
         "B3": true,
         "B4": true,
         "M1": false,
@@ -2884,7 +2884,7 @@
       "role": "非常勤講師",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -2909,7 +2909,7 @@
       "role": "非常勤講師",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -2959,8 +2959,8 @@
       "role": "准教授",
       "unit": "2",
       "target": {
-        "B1": true,
-        "B2": true,
+        "B1": false,
+        "B2": false,
         "B3": true,
         "B4": true,
         "M1": false,
@@ -3084,8 +3084,8 @@
       "role": "准教授",
       "unit": "1",
       "target": {
-        "B1": true,
-        "B2": true,
+        "B1": false,
+        "B2": false,
         "B3": true,
         "B4": true,
         "M1": false,
@@ -3184,7 +3184,7 @@
       "role": "講師",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -3909,8 +3909,8 @@
       "role": "教授",
       "unit": "2",
       "target": {
-        "B1": true,
-        "B2": true,
+        "B1": false,
+        "B2": false,
         "B3": true,
         "B4": true,
         "M1": false,
@@ -4209,8 +4209,8 @@
       "role": "准教授",
       "unit": "2",
       "target": {
-        "B1": true,
-        "B2": true,
+        "B1": false,
+        "B2": false,
         "B3": true,
         "B4": true,
         "M1": false,
@@ -4234,8 +4234,8 @@
       "role": "教授",
       "unit": "1",
       "target": {
-        "B1": true,
-        "B2": true,
+        "B1": false,
+        "B2": false,
         "B3": true,
         "B4": true,
         "M1": false,
@@ -4809,7 +4809,7 @@
       "role": "准教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -4834,7 +4834,7 @@
       "role": "准教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -6059,7 +6059,7 @@
       "role": "教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -6134,8 +6134,8 @@
       "role": "准教授",
       "unit": "2",
       "target": {
-        "B1": true,
-        "B2": true,
+        "B1": false,
+        "B2": false,
         "B3": true,
         "B4": true,
         "M1": false,
@@ -6159,8 +6159,8 @@
       "role": "准教授",
       "unit": "2",
       "target": {
-        "B1": true,
-        "B2": true,
+        "B1": false,
+        "B2": false,
         "B3": true,
         "B4": true,
         "M1": false,
@@ -7084,7 +7084,7 @@
       "role": "講師",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -7959,7 +7959,7 @@
       "role": "准教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -7984,7 +7984,7 @@
       "role": "准教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -8409,8 +8409,8 @@
       "role": "非常勤講師",
       "unit": "2",
       "target": {
-        "B1": true,
-        "B2": true,
+        "B1": false,
+        "B2": false,
         "B3": true,
         "B4": true,
         "M1": false,
@@ -8859,8 +8859,8 @@
       "role": "非常勤講師",
       "unit": "2",
       "target": {
-        "B1": true,
-        "B2": true,
+        "B1": false,
+        "B2": false,
         "B3": true,
         "B4": true,
         "M1": false,
@@ -8884,8 +8884,8 @@
       "role": "非常勤講師",
       "unit": "2",
       "target": {
-        "B1": true,
-        "B2": true,
+        "B1": false,
+        "B2": false,
         "B3": true,
         "B4": true,
         "M1": false,
@@ -12284,7 +12284,7 @@
       "role": "教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -12834,7 +12834,7 @@
       "role": "教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -12934,7 +12934,7 @@
       "role": "教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -12984,7 +12984,7 @@
       "role": "教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -13484,7 +13484,7 @@
       "role": "教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -15009,7 +15009,7 @@
       "role": "教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -15134,7 +15134,7 @@
       "role": "教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -15309,7 +15309,7 @@
       "role": "教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -18659,7 +18659,7 @@
       "role": "准教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -19359,7 +19359,7 @@
       "role": "准教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -19409,7 +19409,7 @@
       "role": "准教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -21509,7 +21509,7 @@
       "role": "教授",
       "unit": "1",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -22309,8 +22309,8 @@
       "role": "非常勤講師",
       "unit": "2",
       "target": {
-        "B1": true,
-        "B2": true,
+        "B1": false,
+        "B2": false,
         "B3": true,
         "B4": true,
         "M1": false,
@@ -22334,8 +22334,8 @@
       "role": "准教授",
       "unit": "2",
       "target": {
-        "B1": true,
-        "B2": true,
+        "B1": false,
+        "B2": false,
         "B3": true,
         "B4": true,
         "M1": false,
@@ -22884,7 +22884,7 @@
       "role": "教授",
       "unit": "1",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -23409,7 +23409,7 @@
       "role": "非常勤講師",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -24459,7 +24459,7 @@
       "role": "非常勤講師",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -24509,7 +24509,7 @@
       "role": "非常勤講師",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -24559,7 +24559,7 @@
       "role": "准教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -24584,7 +24584,7 @@
       "role": "准教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -24884,9 +24884,9 @@
       "role": "講師",
       "unit": "2",
       "target": {
-        "B1": true,
-        "B2": true,
-        "B3": true,
+        "B1": false,
+        "B2": false,
+        "B3": false,
         "B4": true,
         "M1": false,
         "M2": false,
@@ -24909,7 +24909,7 @@
       "role": "講師",
       "unit": "1",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -24934,7 +24934,7 @@
       "role": "講師",
       "unit": "1",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -25834,7 +25834,7 @@
       "role": "教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -25859,8 +25859,8 @@
       "role": "准教授",
       "unit": "2",
       "target": {
-        "B1": true,
-        "B2": true,
+        "B1": false,
+        "B2": false,
         "B3": true,
         "B4": true,
         "M1": false,
@@ -25884,8 +25884,8 @@
       "role": "准教授",
       "unit": "2",
       "target": {
-        "B1": true,
-        "B2": true,
+        "B1": false,
+        "B2": false,
         "B3": true,
         "B4": true,
         "M1": false,
@@ -26459,7 +26459,7 @@
       "role": "准教授",
       "unit": "4",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -26659,7 +26659,7 @@
       "role": "教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -26684,7 +26684,7 @@
       "role": "准教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -27709,7 +27709,7 @@
       "role": "准教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -29034,7 +29034,7 @@
       "role": "准教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -29234,7 +29234,7 @@
       "role": "非常勤講師",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -29259,7 +29259,7 @@
       "role": "非常勤講師",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -29384,7 +29384,7 @@
       "role": "非常勤講師",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -29434,7 +29434,7 @@
       "role": "教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -29459,7 +29459,7 @@
       "role": "講師",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -29684,8 +29684,8 @@
       "role": "教授",
       "unit": "1",
       "target": {
-        "B1": true,
-        "B2": true,
+        "B1": false,
+        "B2": false,
         "B3": true,
         "B4": true,
         "M1": false,
@@ -30784,7 +30784,7 @@
       "role": "教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -30809,7 +30809,7 @@
       "role": "教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -30834,8 +30834,8 @@
       "role": "准教授",
       "unit": "2",
       "target": {
-        "B1": true,
-        "B2": true,
+        "B1": false,
+        "B2": false,
         "B3": true,
         "B4": true,
         "M1": false,
@@ -30859,8 +30859,8 @@
       "role": "准教授",
       "unit": "2",
       "target": {
-        "B1": true,
-        "B2": true,
+        "B1": false,
+        "B2": false,
         "B3": true,
         "B4": true,
         "M1": false,
@@ -30909,8 +30909,8 @@
       "role": "講師",
       "unit": "2",
       "target": {
-        "B1": true,
-        "B2": true,
+        "B1": false,
+        "B2": false,
         "B3": true,
         "B4": true,
         "M1": false,
@@ -30934,8 +30934,8 @@
       "role": "講師",
       "unit": "2",
       "target": {
-        "B1": true,
-        "B2": true,
+        "B1": false,
+        "B2": false,
         "B3": true,
         "B4": true,
         "M1": false,
@@ -31184,7 +31184,7 @@
       "role": "教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -31209,7 +31209,7 @@
       "role": "教授",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -31784,8 +31784,8 @@
       "role": "准教授",
       "unit": "2",
       "target": {
-        "B1": true,
-        "B2": true,
+        "B1": false,
+        "B2": false,
         "B3": true,
         "B4": true,
         "M1": false,
@@ -33484,7 +33484,7 @@
       "role": "非常勤講師",
       "unit": "2",
       "target": {
-        "B1": true,
+        "B1": false,
         "B2": true,
         "B3": true,
         "B4": true,
@@ -33859,8 +33859,8 @@
       "role": "准教授",
       "unit": "2",
       "target": {
-        "B1": true,
-        "B2": true,
+        "B1": false,
+        "B2": false,
         "B3": true,
         "B4": true,
         "M1": false,
