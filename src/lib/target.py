@@ -20,7 +20,7 @@ baseRoleMaximum = {"B": 4, "M": 2, "D": 3}
 
 
 def roleReturn(rawStr: str, res: dict, BaseRole: str, NoneAllTrue: bool = False):
-    min = 1
+    min = 0
     if "1" in rawStr:
         res[f"{BaseRole}1"] = True
         min = 1
@@ -34,9 +34,10 @@ def roleReturn(rawStr: str, res: dict, BaseRole: str, NoneAllTrue: bool = False)
         res[f"{BaseRole}4"] = True
         min = 4
     if "以上" in rawStr or "above" in rawStr:
+        min = 1
         for i in range(min, baseRoleMaximum[BaseRole] + 1, 1):
             res[f"{BaseRole}{i}"] = True
-    if any(res) and NoneAllTrue == True:
+    if any(res) and NoneAllTrue == True and min == 0:
         for i in range(1, baseRoleMaximum[BaseRole] + 1, 1):
             res[f"{BaseRole}{i}"] = True
     return res
@@ -120,6 +121,8 @@ if __name__ == "__main__":
         "博士前期課程１、２年",
         "2年次以上",
         "１年（情報科学部・芸術学部対象）",
+        "博士前期課程絵画研究 日本画１年",
+        "芸術学研究科博士後期課程１・２年次",
         "💩",
     ]
     for i in array:
